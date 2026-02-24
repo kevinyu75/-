@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Facebook 留言擷取工具",
-  "version": "1.0.0",
-  "description": "點擊圖示後擷取 Facebook 留言並產生複製按鈕",
-  "permissions": ["scripting", "activeTab"],
+  "version": "2.0.0",
+  "description": "單篇掃單 / 批次掃單社團24小時留言",
+  "permissions": ["scripting", "activeTab", "clipboardWrite", "downloads"],
   "host_permissions": ["https://www.facebook.com/*"],
   "action": {
-    "default_title": "擷取 Facebook 留言"
+    "default_title": "擷取留言（單篇）\n在社團首頁點擊→批次掃單"
   },
   "background": {
     "service_worker": "background.js"
